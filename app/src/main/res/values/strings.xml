@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">TEST_APP</string>
     <string name="button_ok">Button</string>
+    <string name="home_bottom_navbar">Home</string>
+    <string name="collection_bottom_navbar">Collection</string>
+    <string name="wishlist_bottom_navbar">Wishlist</string>
+    <string name="profile_bottom_navbar">Profile</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+   //FRAGMENTS//
+    <string name="fragment_home_text">Home Fragment</string>
+    <string name="fragment_collection_text">Collection Fragment</string>
+    <string name="fragment_wishlist_text">Wishlist Fragment</string>
+    <string name="fragment_profile_text">Profile Fragment</string>
 </resources>
