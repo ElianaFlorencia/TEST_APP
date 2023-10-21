@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_homefragment_color">#AEAEAE</color>
+    <color name="bg_collectfragment_color">#CD8CA2</color>
+    <color name="bg_wishfragment_color">#7CA3C1</color>
+    <color name="bg_profilefragment_color">#D8AF73</color>
 </resources>
