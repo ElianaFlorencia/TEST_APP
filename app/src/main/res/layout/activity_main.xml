@@ -42,42 +42,13 @@
             android:id="@+id/constraintLayout"
             android:layout_marginTop="20dp">
 
-            <TextView
-                android:id="@+id/amazonName"
-                android:layout_width="200dp"
-                android:layout_height="46dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="sans-serif-black"
-                android:text="Bubble Games"
-                android:textColor="@color/lavender"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toStartOf="@+id/amazonImage"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/amazonDesc"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                android:text="Todos los juegos, en un solo lugar!"
-                android:textColor="@color/lavender"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/amazonImage"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/amazonName" />
-
             <ImageView
-                android:id="@+id/amazonImage"
-                android:layout_width="159dp"
-                android:layout_height="146dp"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/burbuja"
+                android:id="@+id/logoBubbleGames"
+                android:layout_width="255dp"
+                android:layout_height="125dp"
+                android:src="@drawable/bubblegames"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/amazonName"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
@@ -90,37 +61,39 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/amazonImage">
+                app:layout_constraintTop_toBottomOf="@id/logoBubbleGames">
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:id="@+id/clothingCard"
+                    android:id="@+id/destacadosCard"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     app:cardElevation="20dp"
                     app:cardCornerRadius="20dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/clothingName"
+                            android:id="@+id/destacadosName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/clothingImage"
+                            android:layout_below="@+id/destacadosImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Destacados"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/destacadosImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/clothingImage"
-                            android:src="@drawable/estrella1"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/estrella1" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -135,20 +108,20 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/elecName"
+                            android:id="@+id/categName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/elecImage"
+                            android:layout_below="@+id/categImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Categorias"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/elecImage"
+                            android:id="@+id/categImage"
                             android:src="@drawable/categorias"
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"/>
@@ -178,20 +151,20 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/homeName"
+                            android:id="@+id/gratuitosName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/homeImage"
+                            android:layout_below="@+id/gatuitosImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Gratiutos"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/homeImage"
+                            android:id="@+id/gatuitosImage"
                             android:src="@drawable/billete"
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"/>
@@ -209,20 +182,20 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/beautyName"
+                            android:id="@+id/descargadosName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/beautyImage"
+                            android:layout_below="@+id/descargadosImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Mas descargados"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/beautyImage"
+                            android:id="@+id/descargadosImage"
                             android:src="@drawable/descargados"
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"/>
@@ -252,20 +225,20 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/pharmName"
+                            android:id="@+id/consolName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/pharmImage"
+                            android:layout_below="@+id/consolImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Consolas"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/pharmImage"
+                            android:id="@+id/consolImage"
                             android:src="@drawable/consola"
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"/>
@@ -283,20 +256,20 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/grocName"
+                            android:id="@+id/novName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/grocImage"
+                            android:layout_below="@+id/novImage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
 
                             android:text="Novedades"
-                            android:textColor="@color/lavender"
+                            android:textColor="@color/purple_200"
                             android:textSize="20sp" />
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/grocImage"
+                            android:id="@+id/novImage"
                             android:src="@drawable/novedades"
                             android:layout_marginTop="15dp"
                             android:layout_centerHorizontal="true"/>
