@@ -3,7 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -11,4 +10,12 @@
     <color name="teal_700">#FF018786</color>
 
     <color name="lavender">#8692f7</color>
+
+    <!-- colores de eventos botones -->
+    <color name="yellowDestacados">#FFEB3B</color>
+    <color name="orangeCateg">#FF9800</color>
+    <color name="greenGratuitos">#4CAF50</color>
+    <color name="purpleDescargados">#C44CD8</color>
+    <color name="lightBlueConsol">#2196F3</color>
+    <color name="redNov">#F44336</color>
 </resources>

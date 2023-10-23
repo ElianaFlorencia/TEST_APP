@@ -52,28 +52,31 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
+                android:id="@+id/row1"
                 android:layout_width="0dp"
                 android:layout_height="175dp"
-                android:id="@+id/row1"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
                 android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/logoBubbleGames">
+
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/destacadosCard"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:id="@+id/destacadosCard"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    app:cardElevation="20dp"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
 
                     <RelativeLayout
+                        android:id="@+id/destacadosLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/destacadosName"
@@ -96,16 +99,20 @@
                             android:src="@drawable/estrella1" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    app:cardElevation="20dp"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
                     <RelativeLayout
+                        android:id="@+id/categLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/categName"
@@ -118,13 +125,14 @@
                             android:text="Categorias"
                             android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/categImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/categImage"
-                            android:src="@drawable/categorias"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/categorias" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -146,9 +154,12 @@
                     android:layout_weight="1"
                     app:cardElevation="20dp"
                     app:cardCornerRadius="20dp">
+
                     <RelativeLayout
+                        android:id="@+id/gratuitosLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/gratuitosName"
@@ -161,13 +172,14 @@
                             android:text="Gratiutos"
                             android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/gatuitosImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/gatuitosImage"
-                            android:src="@drawable/billete"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/billete" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -177,9 +189,12 @@
                     android:layout_weight="1"
                     app:cardElevation="20dp"
                     app:cardCornerRadius="20dp">
+
                     <RelativeLayout
+                        android:id="@+id/descargadosLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/descargadosName"
@@ -192,13 +207,14 @@
                             android:text="Mas descargados"
                             android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/descargadosImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/descargadosImage"
-                            android:src="@drawable/descargados"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/descargados" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -220,9 +236,12 @@
                     android:layout_weight="1"
                     app:cardElevation="20dp"
                     app:cardCornerRadius="20dp">
+
                     <RelativeLayout
+                        android:id="@+id/consolLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/consolName"
@@ -235,13 +254,14 @@
                             android:text="Consolas"
                             android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/consolImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/consolImage"
-                            android:src="@drawable/consola"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/consola" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -251,9 +271,12 @@
                     android:layout_weight="1"
                     app:cardElevation="20dp"
                     app:cardCornerRadius="20dp">
+
                     <RelativeLayout
+                        android:id="@+id/novLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
 
                         <TextView
                             android:id="@+id/novName"
@@ -266,16 +289,31 @@
                             android:text="Novedades"
                             android:textColor="@color/purple_200"
                             android:textSize="20sp" />
+
                         <ImageView
+                            android:id="@+id/novImage"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:id="@+id/novImage"
-                            android:src="@drawable/novedades"
+                            android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            android:layout_centerHorizontal="true"/>
+                            android:src="@drawable/novedades" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+            <android.widget.SearchView
+                android:id="@+id/search_bar_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.176"
+                tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
