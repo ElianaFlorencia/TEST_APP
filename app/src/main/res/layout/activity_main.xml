@@ -8,15 +8,12 @@
     tools:context=".MainActivity">
 
 
-
-
-
     <LinearLayout
         android:id="@+id/barra"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="600dp"
-        android:background="#E15050"
+        android:background="#FB4D4D"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
