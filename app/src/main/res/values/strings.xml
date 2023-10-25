@@ -8,9 +8,11 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-   //FRAGMENTS//
+    //FRAGMENTS//
     <string name="fragment_home_text">Home Fragment</string>
     <string name="fragment_collection_text">Collection Fragment</string>
     <string name="fragment_wishlist_text">Wishlist Fragment</string>
     <string name="fragment_profile_text">Profile Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
